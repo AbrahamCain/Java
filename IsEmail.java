@@ -1,14 +1,14 @@
+/*
+    IsEmail 1.0
+    A java program to check user input for an email address
+*/
+
 import java.util.Scanner;
 import java.lang.*;
 
 public class IsEmail{
 	
 	public static void main(String[] args){
-		
-		/*
-    Is Email 1.0
-    A java program to check user input for an email address
-    */
     
 		//Initialize the Scanner
 		Scanner scan = new Scanner(System.in);
