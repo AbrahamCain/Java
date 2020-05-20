@@ -1,17 +1,62 @@
-public class MadLibs {
+import java.util.Scanner;
+
+public class MadLib2 {
   /*
-  This program creates a mad lib created 
-  with variables that I selected randomly
+  This program creates a mad lib 
+  with variables that you select!
+  
+  MadLib 2.0
   */
   	public static void main(String[] args){
+		
+	  //Make the scanner object
+	  Scanner input = new Scanner(System.in);
+		
 
-      //Declare our variables for the mad lib
-      String name1 = "Mankind", name2 = "Wilfred";
-      String adjective1 = "fancy", adjective2 = "hot", adjective3 = "robotic";
-      String verb1 = "whack";
-      String noun1 = "dog", noun2 = "zombie", noun3 = "pot pie", noun4 = "dude", noun5 = "summer squash", noun6 = "after-shave";
-      int number = 14;
-      String place1 = "that alley over there";
+
+    //Use user input to fill in the blanks for the story
+	  System.out.println("Please enter a name:");			
+    String name1 = input.nextLine();						
+	  
+	  System.out.println("Please enter a 2nd name:");		
+	  String name2 = input.nextLine();
+	  
+	  System.out.println("Please enter an adjective:");		
+    String adjective1 = input.nextLine();
+	  
+	  System.out.println("Please enter a 2nd adjective:");	
+	  String adjective2 = input.nextLine();
+
+	  System.out.println("Please enter a 3rd adjective:");	
+	  String adjective3 = input.nextLine();
+	  
+	  System.out.println("Please enter a verb:");
+    String verb1 = input.nextLine();
+	  
+	  System.out.println("Please enter a noun:");
+    String noun1 = input.nextLine();
+
+	  System.out.println("Please enter a 2nd noun:");
+	  String noun2 = input.nextLine();
+
+	  System.out.println("Please enter a 3rd noun:");
+	  String noun3 = input.nextLine();
+
+	  System.out.println("Please enter a 4th noun:");
+	  String noun4 = input.nextLine();
+
+	  System.out.println("Please enter a 5th noun:");
+	  String noun5 = input.nextLine();
+
+	  System.out.println("Please enter a 6th noun:");
+	  String noun6 = input.nextLine();
+	  
+	  System.out.println("Please enter a number:");
+    int number = input.nextInt();
+	  
+	  System.out.println("Please enter a place:");
+    String place1 = input.nextLine();
+
 
 
       
