@@ -3,7 +3,7 @@ public class MathMagic {
     //Change this input number to any almost any other int number and you will get the same result 
     int myNumber = 24;
 
-		int stepOne = myNumber * myNumber;
+	  int stepOne = myNumber * myNumber;
     int stepTwo = stepOne + myNumber;
     int stepThree = stepTwo / myNumber;
     int stepFour = stepThree + 17;
