@@ -54,11 +54,51 @@ public class Character{
 		boolean in3 = scan.nextBoolean();
 		
 		
-		//Create the character with the options selected by the user
+		//Create the characters with the options selected by the user or preset options
 		Character yourCharacter = new Character(in1, in2, in3);
-		
+
+		Character badGuy1 = new Character("Sauron", 3, false);
+		Character goodGuy1 = new Character("Gandalf", 3, true);
+		Character badGuy2 = new Character("Gollum", 2, false);
+		Character goodGuy2 = new Character("Samwise", 10, true);
 		
 		//Greet the new character
 		System.out.println("\n\nHello " + yourCharacter.characterName + ". Welcome to the " + yourCharacter.fightingStyle + "'s Guild. If I told you that you were a good-guy, that would be " + yourCharacter.isGood + "."); 
+
+		
+		//Ask who you would like to know more about
+		System.out.println("\n\nChoose who you would like to know more about:\n\n1....Bad Guy #1\n2....Bad Guy #2\n3....Good Guy #1\n4....Good Guy #2\n");
+		int view = scan.nextInt();
+		
+		//set the alignment variable with a default of bad
+		String alignment = "bad";
+	
+		
+		//depending on who the user selects, display the appropriate message and info
+		if (view == 1){
+			if (badGuy1.isGood){
+			alignment = "good";
+			}
+			System.out.println(badGuy1.characterName + " is a " + alignment + " " + badGuy1.fightingStyle);
+		}
+		else if (view == 2){
+			if (badGuy2.isGood){
+			alignment = "good";
+			}
+			System.out.println(badGuy2.characterName + " is a " + alignment + " " + badGuy2.fightingStyle);
+		}
+		else if (view == 3){
+			if (goodGuy1.isGood){
+			alignment = "good";
+			}
+			System.out.println(goodGuy1.characterName + " is a " + alignment + " " + goodGuy1.fightingStyle);
+		}
+		else if (view == 4){
+			if (goodGuy2.isGood){
+			alignment = "good";
+			}
+			System.out.println(goodGuy2.characterName + " is a " + alignment + " " + goodGuy2.fightingStyle);
+		}
+		
 	}
 }
