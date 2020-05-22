@@ -32,6 +32,7 @@ public class Character{
 		
 	}
 	
+	//Main Method
 	public static void main(String[] args){
 		//initiate scanner
 		Scanner scan = new Scanner(System.in);
